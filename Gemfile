@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 gem 'prawn-table', '~> 0.2.2'
 gem "paperclip", "~>3.0"
+gem 'devise'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets

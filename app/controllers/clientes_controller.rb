@@ -1,4 +1,5 @@
 class ClientesController < ApplicationController
+	before_action :authenticate_usuario!
 	require 'csv'
   require "prawn"
   require "prawn/table"
@@ -39,4 +40,4 @@ class ClientesController < ApplicationController
 	        	pdf.start_new_page
       end
 	end
-end 
+end
