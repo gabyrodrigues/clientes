@@ -23,8 +23,9 @@ class ClientesController < ApplicationController
 		end
   end	
   def criar_pdf
+
     @pessoa = Cliente.all
-      caminho = "/home/usuario/Documentos/pdf/boleto.pdf" #Caminho onde irá ficar o arquivo
+     caminho = "/home/usuario/Documentos/pdf/boleto.pdf" #Caminho onde irá ficar o arquivo
       #caminho_img = "/home/desenvolvimento/Área de Trabalho/background.png"
       Prawn::Document.generate(caminho) do |pdf|
     		@pessoa.each do |pessoa|
@@ -39,4 +40,3 @@ class ClientesController < ApplicationController
       end
 	end
 end 
-

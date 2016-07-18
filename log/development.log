@@ -5124,6 +5124,7 @@ Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dd
 Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-15 17:16:41 -0300
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2016-07-18 13:33:55 -0300
   [1m[36mActiveRecord::SchemaMigration Load (54.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -5234,6 +5235,31 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
   activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
   activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+=======
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 14:11:03 -0300
+
+ActiveRecord::NoDatabaseError (FATAL:  database "clientes" does not exist
+):
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:371:in `call'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
   activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
   activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
@@ -5264,6 +5290,7 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -5314,6 +5341,313 @@ Completed 500 Internal Server Error in 313ms
 
 ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
   * "/home/usuario/Documentos/clientes/app/views"
+=======
+  /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.4ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (109.4ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.6ms)
+  [1m[36m (371.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (73.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateClientes (20160715191601)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (168.7ms)[0m  [1mCREATE TABLE "clientes" ("id" serial primary key, "nome" character varying, "telefone" character varying, "endereco" character varying, "cep" character varying, "valor" character varying, "vencimento" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (11.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160715191601"]]
+  [1m[36m (7.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'clientes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 14:15:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (124.4ms)
+Completed 200 OK in 2841ms (Views: 2803.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 14:15:09 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 14:15:09 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 14:15:10 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 14:15:10 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 14:15:10 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 14:15:10 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 14:15:10 -0300
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 14:15:24 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SSUOFBLXqOKY2r1ls1fCsrYL4QLguESS6vU5LC3borC0740t/molOGyKXtMReCURJYwB+4iztsTekebMVT9Ziw==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f1fe9364100 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-4380-13th2qi.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save Clientes"}
+Completed 500 Internal Server Error in 154ms
+
+KeyError (key not found: nome):
+  app/controllers/clientes_controller.rb:16:in `block in buscar'
+  app/controllers/clientes_controller.rb:14:in `buscar'
+
+
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (139.5ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/desenvolvimento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (193.6ms)
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 14:21:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (58.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SSUOFBLXqOKY2r1ls1fCsrYL4QLguESS6vU5LC3borC0740t/molOGyKXtMReCURJYwB+4iztsTekebMVT9Ziw==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x000000033043e8 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-5537-1t5blfy.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save Clientes"}
+Completed 500 Internal Server Error in 23ms
+
+KeyError (key not found: nome):
+  app/controllers/clientes_controller.rb:16:in `block in buscar'
+  app/controllers/clientes_controller.rb:14:in `buscar'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (52.0ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 14:21:19 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 907ms (Views: 905.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 14:21:27 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C4f4kL76DBxFMHl4onvmqjybj6zptCYUgiA7ztOkFZb2TXupUkeBxrFgms4AVAEJrxxvVYG/1EK2ROQuq0DurQ==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x0000000225b640 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-5537-1fgwhdm.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save Clientes"}
+Completed 500 Internal Server Error in 48ms
+
+KeyError (key not found: nome):
+  app/controllers/clientes_controller.rb:16:in `block in buscar'
+  app/controllers/clientes_controller.rb:14:in `buscar'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (30.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (52.4ms)
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 14:27:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (15.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C4f4kL76DBxFMHl4onvmqjybj6zptCYUgiA7ztOkFZb2TXupUkeBxrFgms4AVAEJrxxvVYG/1EK2ROQuq0DurQ==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x0000000482a3a8 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-5775-145sw54.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save Clientes"}
+Completed 500 Internal Server Error in 21ms
+
+KeyError (key not found: nome):
+  app/controllers/clientes_controller.rb:16:in `block in buscar'
+  app/controllers/clientes_controller.rb:14:in `buscar'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (70.1ms)
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 14:35:30 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C4f4kL76DBxFMHl4onvmqjybj6zptCYUgiA7ztOkFZb2TXupUkeBxrFgms4AVAEJrxxvVYG/1EK2ROQuq0DurQ==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x00000004d0a6e8 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-5775-1lizs3d.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save Clientes"}
+Completed 500 Internal Server Error in 29ms
+
+KeyError (key not found: nome):
+  app/controllers/clientes_controller.rb:16:in `block in buscar'
+  app/controllers/clientes_controller.rb:14:in `buscar'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.5ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 14:53:46 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (169.1ms)
+Completed 200 OK in 1165ms (Views: 1163.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 14:53:47 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 14:53:47 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 14:53:47 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 14:53:47 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 14:53:47 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 14:53:47 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 14:53:47 -0300
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 14:54:27 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"om9su8nsAJTLmmwJRK5784M5mQEMXZ1vhEqUmP/+L01fpe+CJVGNTj/Kj7/mgZxQEL55+GRWbzmwLkt4hxrUdg==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f3f35238b80 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-5775-8wijmv.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save Clientes"}
+Completed 500 Internal Server Error in 17ms
+
+KeyError (key not found: nome):
+  app/controllers/clientes_controller.rb:16:in `block in buscar'
+  app/controllers/clientes_controller.rb:14:in `buscar'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.2ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 14:56:49 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 14:56:49 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 14:56:49 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 14:56:49 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 14:56:49 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 14:56:49 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 14:56:49 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 14:56:49 -0300
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 14:56:53 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f9RCcAA2kyY5ETBEFNZsnrLAEqIZZkxp6fiiq5/+H3mCHsFJ7Ise/M1B0/K2+Ys9IUfyW3Ftvj/dnH1L5xrkQg==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f3f1c8c2d98 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-5775-1oelr41.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save Clientes"}
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (56.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 17:56:53.987131"], ["updated_at", "2016-07-18 17:56:53.987131"]]
+  [1m[35m (34.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 17:56:54.230323"], ["updated_at", "2016-07-18 17:56:54.230323"]]
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 17:56:54.240752"], ["updated_at", "2016-07-18 17:56:54.240752"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 17:56:54.251848"], ["updated_at", "2016-07-18 17:56:54.251848"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 17:56:54.263284"], ["updated_at", "2016-07-18 17:56:54.263284"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 17:56:54.273586"], ["updated_at", "2016-07-18 17:56:54.273586"]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 17:56:54.284807"], ["updated_at", "2016-07-18 17:56:54.284807"]]
+  [1m[35m (6.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 17:56:54.296971"], ["updated_at", "2016-07-18 17:56:54.296971"]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 666ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
 ):
   actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
   actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
@@ -5331,7 +5665,11 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
@@ -5410,6 +5748,7 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -5460,6 +5799,141 @@ Completed 500 Internal Server Error in 490ms
 
 ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
   * "/home/usuario/Documentos/clientes/app/views"
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (32.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.1ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (44.4ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 14:58:18 -0300
+
+SyntaxError (/home/desenvolvimento/Documentos/clientes/app/controllers/clientes_controller.rb:9: unknown regexp options - dvlvt
+/home/desenvolvimento/Documentos/clientes/app/controllers/clientes_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+/home/desenvolvimento/Área de Trabalho/Testes/templateinf.jpg
+                              ^):
+  app/controllers/clientes_controller.rb:9: unknown regexp options - dvlvt
+  app/controllers/clientes_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.2ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 14:58:20 -0300
+
+SyntaxError (/home/desenvolvimento/Documentos/clientes/app/controllers/clientes_controller.rb:9: unknown regexp options - dvlvt
+/home/desenvolvimento/Documentos/clientes/app/controllers/clientes_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+/home/desenvolvimento/Área de Trabalho/Testes/templateinf.jpg
+                              ^):
+  app/controllers/clientes_controller.rb:9: unknown regexp options - dvlvt
+  app/controllers/clientes_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (11.8ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 14:58:21 -0300
+
+SyntaxError (/home/desenvolvimento/Documentos/clientes/app/controllers/clientes_controller.rb:9: unknown regexp options - dvlvt
+/home/desenvolvimento/Documentos/clientes/app/controllers/clientes_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+/home/desenvolvimento/Área de Trabalho/Testes/templateinf.jpg
+                              ^):
+  app/controllers/clientes_controller.rb:9: unknown regexp options - dvlvt
+  app/controllers/clientes_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.5ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 14:58:22 -0300
+
+SyntaxError (/home/desenvolvimento/Documentos/clientes/app/controllers/clientes_controller.rb:9: unknown regexp options - dvlvt
+/home/desenvolvimento/Documentos/clientes/app/controllers/clientes_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+/home/desenvolvimento/Área de Trabalho/Testes/templateinf.jpg
+                              ^):
+  app/controllers/clientes_controller.rb:9: unknown regexp options - dvlvt
+  app/controllers/clientes_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 14:58:34 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 14:58:34 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 14:58:34 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 14:58:34 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 14:58:34 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 14:58:34 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 14:58:34 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 14:58:34 -0300
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 14:58:40 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iP8GSry7d44zGQXKZ6JkK0pbYVQmzw7mC9lewcVKRZV1NYVzUAb6VMdJ5nzFjYOI2dyBrU7E/LA/vYEhva6+rg==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f3f1cef1818 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-5775-wmgjdb.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save Clientes"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 17:58:40.257847"], ["updated_at", "2016-07-18 17:58:40.257847"]]
+  [1m[35m (11.4ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 17:58:40.275330"], ["updated_at", "2016-07-18 17:58:40.275330"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 17:58:40.285508"], ["updated_at", "2016-07-18 17:58:40.285508"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 17:58:40.297245"], ["updated_at", "2016-07-18 17:58:40.297245"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 17:58:40.308094"], ["updated_at", "2016-07-18 17:58:40.308094"]]
+  [1m[35m (6.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 17:58:40.319487"], ["updated_at", "2016-07-18 17:58:40.319487"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 17:58:40.330600"], ["updated_at", "2016-07-18 17:58:40.330600"]]
+  [1m[35m (6.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 17:58:40.341660"], ["updated_at", "2016-07-18 17:58:40.341660"]]
+  [1m[36m (5.5ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 165ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
 ):
   actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
   actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
@@ -5477,7 +5951,11 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
@@ -5556,6 +6034,7 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -5606,6 +6085,58 @@ Completed 500 Internal Server Error in 347ms
 
 ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
   * "/home/usuario/Documentos/clientes/app/views"
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (29.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.0ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.4ms)
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 14:58:43 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iP8GSry7d44zGQXKZ6JkK0pbYVQmzw7mC9lewcVKRZV1NYVzUAb6VMdJ5nzFjYOI2dyBrU7E/LA/vYEhva6+rg==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x00000005083748 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-5775-j16rak.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save PDF"}
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 17:58:43.636431"], ["updated_at", "2016-07-18 17:58:43.636431"]]
+  [1m[35m (33.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 17:58:43.675313"], ["updated_at", "2016-07-18 17:58:43.675313"]]
+  [1m[36m (4.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 17:58:43.685317"], ["updated_at", "2016-07-18 17:58:43.685317"]]
+  [1m[35m (7.2ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 17:58:43.696693"], ["updated_at", "2016-07-18 17:58:43.696693"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 17:58:43.707060"], ["updated_at", "2016-07-18 17:58:43.707060"]]
+  [1m[35m (7.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 17:58:43.718650"], ["updated_at", "2016-07-18 17:58:43.718650"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 17:58:43.730125"], ["updated_at", "2016-07-18 17:58:43.730125"]]
+  [1m[35m (17.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 17:58:43.752691"], ["updated_at", "2016-07-18 17:58:43.752691"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 158ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
 ):
   actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
   actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
@@ -5623,7 +6154,11 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
@@ -5702,6 +6237,7 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -5752,6 +6288,166 @@ Completed 500 Internal Server Error in 326ms
 
 ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
   * "/home/usuario/Documentos/clientes/app/views"
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (30.1ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.6ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 15:00:48 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 15:00:48 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 15:00:48 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:48 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:48 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:48 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:48 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:48 -0300
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 15:00:49 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 15:00:49 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 15:00:49 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:49 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:49 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:49 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:49 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:49 -0300
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 15:00:50 -0300
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 15:00:56 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y/ILCITRxj8Wn1tERyxhF8oe6KSe2+tU2e+0EBM3iC82OIgxaGxL5eLPuPLlA4a0WZkIXfbQGQLti2vwa9NzFA==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f3f24019cc0 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-5775-5vxh8h.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save PDF"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 18:00:56.549852"], ["updated_at", "2016-07-18 18:00:56.549852"]]
+  [1m[35m (27.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 18:00:56.581780"], ["updated_at", "2016-07-18 18:00:56.581780"]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 18:00:56.592508"], ["updated_at", "2016-07-18 18:00:56.592508"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:00:56.604054"], ["updated_at", "2016-07-18 18:00:56.604054"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:00:56.616129"], ["updated_at", "2016-07-18 18:00:56.616129"]]
+  [1m[35m (4.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:00:56.625760"], ["updated_at", "2016-07-18 18:00:56.625760"]]
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 18:00:56.637326"], ["updated_at", "2016-07-18 18:00:56.637326"]]
+  [1m[35m (6.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:00:56.648970"], ["updated_at", "2016-07-18 18:00:56.648970"]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 141ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
 ):
   actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
   actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
@@ -5769,7 +6465,11 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
@@ -5848,6 +6548,7 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -5999,6 +6700,28 @@ ORDER BY c.conname
   [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (11.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (38.1ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.1ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (61.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
 FROM pg_constraint c
 JOIN pg_class t1 ON c.conrelid = t1.oid
 JOIN pg_class t2 ON c.confrelid = t2.oid
@@ -6012,6 +6735,7 @@ ORDER BY c.conname
 [0m
 
 
+<<<<<<< HEAD
 Started GET "/clientes/" for 127.0.0.1 at 2016-07-18 14:00:08 -0300
   [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by ClientesController#index as HTML
@@ -7017,6 +7741,45 @@ Completed 500 Internal Server Error in 844ms
 
 ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
   * "/home/usuario/Documentos/clientes/app/views"
+=======
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 15:08:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (64.9ms)
+Completed 200 OK in 1109ms (Views: 1088.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 15:09:01 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RqX2hJcRKPLZpDKbioZGMy8tI9f2XB0Ditts7FqtpI67b3W9e6ylKC300S0oqaGQvKrDLp5X71W+v7MMIklftQ==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f013d590ea8 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-6514-pdpzi7.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save PDF"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 18:09:01.221895"], ["updated_at", "2016-07-18 18:09:01.221895"]]
+  [1m[35m (13.6ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 18:09:01.250848"], ["updated_at", "2016-07-18 18:09:01.250848"]]
+  [1m[36m (12.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 18:09:01.273004"], ["updated_at", "2016-07-18 18:09:01.273004"]]
+  [1m[35m (12.7ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:09:01.294348"], ["updated_at", "2016-07-18 18:09:01.294348"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:09:01.305231"], ["updated_at", "2016-07-18 18:09:01.305231"]]
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:09:01.317203"], ["updated_at", "2016-07-18 18:09:01.317203"]]
+  [1m[36m (12.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 18:09:01.337267"], ["updated_at", "2016-07-18 18:09:01.337267"]]
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:09:01.349594"], ["updated_at", "2016-07-18 18:09:01.349594"]]
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 261ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
 ):
   actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
   actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
@@ -7034,7 +7797,7 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
-  /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
@@ -7113,6 +7876,158 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (31.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (62.2ms)
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 15:09:57 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RqX2hJcRKPLZpDKbioZGMy8tI9f2XB0Ditts7FqtpI67b3W9e6ylKC300S0oqaGQvKrDLp5X71W+v7MMIklftQ==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f013e4bfb90 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-6514-15qqq5s.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save PDF"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 18:09:57.821038"], ["updated_at", "2016-07-18 18:09:57.821038"]]
+  [1m[35m (24.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 18:09:57.849552"], ["updated_at", "2016-07-18 18:09:57.849552"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 18:09:57.860379"], ["updated_at", "2016-07-18 18:09:57.860379"]]
+  [1m[35m (6.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:09:57.871573"], ["updated_at", "2016-07-18 18:09:57.871573"]]
+  [1m[36m (5.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:09:57.883521"], ["updated_at", "2016-07-18 18:09:57.883521"]]
+  [1m[35m (6.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:09:57.893792"], ["updated_at", "2016-07-18 18:09:57.893792"]]
+  [1m[36m (7.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 18:09:57.905230"], ["updated_at", "2016-07-18 18:09:57.905230"]]
+  [1m[35m (5.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:09:57.916539"], ["updated_at", "2016-07-18 18:09:57.916539"]]
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 152ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+<<<<<<< HEAD
+  /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -7325,6 +8240,85 @@ Completed 500 Internal Server Error in 313ms
 
 ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
   * "/home/usuario/Documentos/clientes/app/views"
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (33.2ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.1ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.5ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 15:10:03 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 15:10:03 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 15:10:03 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 15:10:03 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 15:10:03 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 15:10:03 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 15:10:03 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 15:10:03 -0300
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 15:10:09 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D4Acva9Nz6eBJUx2K2S56904w7oQ5JZYWSsQi4IcaFnySp+EQ/BCfXV1r8CJS15ITr8jQ3jvZA5tT89r+viTYg==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f013d8be940 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-6514-1ccvlv1.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save PDF"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 18:10:09.466910"], ["updated_at", "2016-07-18 18:10:09.466910"]]
+  [1m[35m (20.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 18:10:09.492901"], ["updated_at", "2016-07-18 18:10:09.492901"]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 18:10:09.504138"], ["updated_at", "2016-07-18 18:10:09.504138"]]
+  [1m[35m (4.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:10:09.514468"], ["updated_at", "2016-07-18 18:10:09.514468"]]
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:10:09.525729"], ["updated_at", "2016-07-18 18:10:09.525729"]]
+  [1m[35m (5.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:10:09.536770"], ["updated_at", "2016-07-18 18:10:09.536770"]]
+  [1m[36m (5.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 18:10:09.547426"], ["updated_at", "2016-07-18 18:10:09.547426"]]
+  [1m[35m (6.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:10:09.558624"], ["updated_at", "2016-07-18 18:10:09.558624"]]
+  [1m[36m (5.5ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 132ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
 ):
   actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
   actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
@@ -7342,7 +8336,11 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
@@ -7421,6 +8419,7 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -7448,6 +8447,58 @@ Completed 500 Internal Server Error in 7345ms
 
 ActionView::MissingTemplate (Missing template clientes/criar_pdf, application/criar_pdf with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
   * "/home/usuario/Documentos/clientes/app/views"
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (29.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.9ms)
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 15:11:55 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D4Acva9Nz6eBJUx2K2S56904w7oQ5JZYWSsQi4IcaFnySp+EQ/BCfXV1r8CJS15ITr8jQ3jvZA5tT89r+viTYg==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f013eb990b0 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-6514-1cmgiof.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save PDF"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 18:11:55.456478"], ["updated_at", "2016-07-18 18:11:55.456478"]]
+  [1m[35m (23.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 18:11:55.484759"], ["updated_at", "2016-07-18 18:11:55.484759"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 18:11:55.496098"], ["updated_at", "2016-07-18 18:11:55.496098"]]
+  [1m[35m (5.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:11:55.506919"], ["updated_at", "2016-07-18 18:11:55.506919"]]
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:11:55.518377"], ["updated_at", "2016-07-18 18:11:55.518377"]]
+  [1m[35m (15.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:11:55.540327"], ["updated_at", "2016-07-18 18:11:55.540327"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 18:11:55.551869"], ["updated_at", "2016-07-18 18:11:55.551869"]]
+  [1m[35m (5.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:11:55.562216"], ["updated_at", "2016-07-18 18:11:55.562216"]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 184ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
 ):
   actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
   actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
@@ -7465,7 +8516,11 @@ ActionView::MissingTemplate (Missing template clientes/criar_pdf, application/cr
   actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
@@ -7544,6 +8599,7 @@ ActionView::MissingTemplate (Missing template clientes/criar_pdf, application/cr
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -7598,6 +8654,85 @@ Completed 500 Internal Server Error in 7274ms
 
 ActionView::MissingTemplate (Missing template clientes/criar_pdf, application/criar_pdf with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
   * "/home/usuario/Documentos/clientes/app/views"
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (39.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.8ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 15:12:06 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 15:12:06 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 15:12:06 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 15:12:06 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 15:12:06 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 15:12:06 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 15:12:06 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 15:12:06 -0300
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 15:12:11 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wEVV+g4YZ9QWSTWi+dcojFBzb35/QB3qZ5lk9BkRC/E9j9bD4qXqDuIZ1hRb+M8vw/SPhxdL77xT/bsUYfXwyg==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f013e8e4860 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-6514-1cb1cef.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save PDF"}
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 18:12:11.610282"], ["updated_at", "2016-07-18 18:12:11.610282"]]
+  [1m[35m (10.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 18:12:11.626218"], ["updated_at", "2016-07-18 18:12:11.626218"]]
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 18:12:11.637877"], ["updated_at", "2016-07-18 18:12:11.637877"]]
+  [1m[35m (5.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:12:11.648645"], ["updated_at", "2016-07-18 18:12:11.648645"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:12:11.659580"], ["updated_at", "2016-07-18 18:12:11.659580"]]
+  [1m[35m (6.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:12:11.671290"], ["updated_at", "2016-07-18 18:12:11.671290"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 18:12:11.682762"], ["updated_at", "2016-07-18 18:12:11.682762"]]
+  [1m[35m (5.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:12:11.692771"], ["updated_at", "2016-07-18 18:12:11.692771"]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 123ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
 ):
   actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
   actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
@@ -7615,7 +8750,11 @@ ActionView::MissingTemplate (Missing template clientes/criar_pdf, application/cr
   actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
@@ -7694,6 +8833,7 @@ ActionView::MissingTemplate (Missing template clientes/criar_pdf, application/cr
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -7856,6 +8996,130 @@ Started GET "/clientes/criar_pdf" for 127.0.0.1 at 2016-07-18 15:49:35 -0300
 
 AbstractController::ActionNotFound (The action 'show' could not be found for ClientesController):
   actionpack (4.2.0) lib/abstract_controller/base.rb:132:in `process'
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (39.2ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.2ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 15:13:40 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 15:13:40 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 15:13:40 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 15:13:40 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 15:13:40 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 15:13:40 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 15:13:40 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 15:13:40 -0300
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 15:13:46 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ASiesjjFGuiCj+7fIVo/xqkkRjDOm6h+06CNJ3wp5cf84h2L1HiXMnbfDWmDddhlOqOmyaaQWijnxFLHBM0e/A==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f013e8edd48 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-6514-1y417dm.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save PDF"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 18:13:46.500203"], ["updated_at", "2016-07-18 18:13:46.500203"]]
+  [1m[35m (15.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 18:13:46.521457"], ["updated_at", "2016-07-18 18:13:46.521457"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (24.6ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 18:13:46.532193"], ["updated_at", "2016-07-18 18:13:46.532193"]]
+  [1m[35m (15.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:13:46.577313"], ["updated_at", "2016-07-18 18:13:46.577313"]]
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:13:46.588678"], ["updated_at", "2016-07-18 18:13:46.588678"]]
+  [1m[35m (5.5ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:13:46.598860"], ["updated_at", "2016-07-18 18:13:46.598860"]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 18:13:46.611048"], ["updated_at", "2016-07-18 18:13:46.611048"]]
+  [1m[35m (4.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:13:46.621299"], ["updated_at", "2016-07-18 18:13:46.621299"]]
+  [1m[36m (5.8ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 178ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
   actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
   actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
@@ -7867,7 +9131,11 @@ AbstractController::ActionNotFound (The action 'show' could not be found for Cli
   actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
   actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
   rack (1.6.4) lib/rack/etag.rb:24:in `call'
+<<<<<<< HEAD
   rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+=======
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   rack (1.6.4) lib/rack/head.rb:13:in `call'
   actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
   actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
@@ -7907,6 +9175,7 @@ AbstractController::ActionNotFound (The action 'show' could not be found for Cli
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -8010,6 +9279,85 @@ Completed 500 Internal Server Error in 414ms
 
 ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
   * "/home/usuario/Documentos/clientes/app/views"
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (30.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.1ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 15:16:18 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 15:16:18 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 15:16:18 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 15:16:18 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 15:16:18 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 15:16:18 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 15:16:19 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 15:16:19 -0300
+
+
+Started POST "/clientes/buscar" for 127.0.0.1 at 2016-07-18 15:16:23 -0300
+Processing by ClientesController#buscar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3uEjHTEcqvnykCJFAmtdklxu+jq3idXRKhTY0t23LAAjK6Ak3aEnIwbAwfOgRLoxz+kaw9+CJ4cecAcypVPXOw==", "clientes"=>{"nome_arquivo"=>#<ActionDispatch::Http::UploadedFile:0x007f013e540420 @tempfile=#<Tempfile:/tmp/RackMultipart20160718-6514-cq9yyb.csv>, @original_filename="dados.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"clientes[nome_arquivo]\"; filename=\"dados.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Save PDF"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Marcos Paulo"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-010"], ["vencimento", "10"], ["created_at", "2016-07-18 18:16:23.884231"], ["updated_at", "2016-07-18 18:16:23.884231"]]
+  [1m[35m (26.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Ayrton"], ["telefone", "8597926571"], ["cep", "60000-000"], ["valor", "210"], ["vencimento", "15062015"], ["created_at", "2016-07-18 18:16:23.916471"], ["updated_at", "2016-07-18 18:16:23.916471"]]
+  [1m[36m (28.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome", "Giordano"], ["telefone", "8585000000"], ["cep", "60830-355"], ["valor", "2210"], ["vencimento", "15072015"], ["created_at", "2016-07-18 18:16:23.950022"], ["updated_at", "2016-07-18 18:16:23.950022"]]
+  [1m[35m (5.9ms)[0m  COMMIT
+  [1m[36m (1.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Vander"], ["telefone", "8585000000"], ["endereco", "rua de teste"], ["cep", "60866-340"], ["valor", "22210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:16:23.961618"], ["updated_at", "2016-07-18 18:16:23.961618"]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Anderson"], ["telefone", "8585000000"], ["endereco", "rua de teste2"], ["cep", "60100-110"], ["valor", "12210"], ["vencimento", "15102015"], ["created_at", "2016-07-18 18:16:23.972701"], ["updated_at", "2016-07-18 18:16:23.972701"]]
+  [1m[35m (4.5ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nome", "Davi"], ["telefone", "8585000000"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:16:23.983544"], ["updated_at", "2016-07-18 18:16:23.983544"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nome", "Lima Rodrigues"], ["telefone", "8585833353"], ["endereco", "Tv. Alvoro Costa"], ["cep", " 53 - Vicente Pizon"], ["valor", " 60182-014"], ["vencimento", "10"], ["created_at", "2016-07-18 18:16:23.994343"], ["updated_at", "2016-07-18 18:16:23.994343"]]
+  [1m[35m (6.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clientes" ("nome", "telefone", "endereco", "cep", "valor", "vencimento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["nome", "Gabriela"], ["telefone", "8585000000"], ["endereco", "rua zerozero"], ["cep", "60103-110"], ["valor", "112210"], ["vencimento", "16052015"], ["created_at", "2016-07-18 18:16:24.005200"], ["updated_at", "2016-07-18 18:16:24.005200"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 178ms
+
+ActionView::MissingTemplate (Missing template clientes/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/desenvolvimento/Documentos/clientes/app/views"
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
 ):
   actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
   actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
@@ -8027,7 +9375,11 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
   activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
   actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
@@ -8106,6 +9458,7 @@ ActionView::MissingTemplate (Missing template clientes/buscar, application/busca
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /home/usuario/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -8272,3 +9625,126 @@ Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c
 
 
 Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 16:03:05 -0300
+=======
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/desenvolvimento/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (33.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.7ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (44.1ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-18 15:17:41 -0300
+Processing by ClientesController#index as HTML
+  Rendered clientes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 15:17:41 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 15:17:41 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 15:17:41 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 15:17:41 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 15:17:41 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 15:17:41 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 15:17:41 -0300
+
+
+Started POST "/clientes/criar_pdf" for 127.0.0.1 at 2016-07-18 15:17:46 -0300
+Processing by ClientesController#criar_pdf as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lyjxzYtRKcnuQTzQvj1KdeIvj8xb4dbwAMES0GBDx+Bq4nL0Z+ykExoR32YcEq3WcahvNTPqJKY0pc0wGKc82w==", "commit"=>"Save PDF"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError ("aki"):
+  app/controllers/clientes_controller.rb:26:in `criar_pdf'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.9ms)
+
+
+Started POST "/clientes/criar_pdf" for 127.0.0.1 at 2016-07-18 15:18:08 -0300
+Processing by ClientesController#criar_pdf as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lyjxzYtRKcnuQTzQvj1KdeIvj8xb4dbwAMES0GBDx+Bq4nL0Z+ykExoR32YcEq3WcahvNTPqJKY0pc0wGKc82w==", "commit"=>"Save PDF"}
+  [1m[35mCliente Load (1.6ms)[0m  SELECT "clientes".* FROM "clientes"
+Completed 500 Internal Server Error in 30ms
+
+RuntimeError ("/home/desenvolvimento/Área de Trabalho/Testes/Marcos Paulo.pdf"):
+  app/controllers/clientes_controller.rb:30:in `block in criar_pdf'
+  app/controllers/clientes_controller.rb:28:in `criar_pdf'
+
+
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.3ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/desenvolvimento/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.0ms)
+
+
+Started POST "/clientes/criar_pdf" for 127.0.0.1 at 2016-07-18 15:18:28 -0300
+Processing by ClientesController#criar_pdf as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lyjxzYtRKcnuQTzQvj1KdeIvj8xb4dbwAMES0GBDx+Bq4nL0Z+ykExoR32YcEq3WcahvNTPqJKY0pc0wGKc82w==", "commit"=>"Save PDF"}
+  [1m[36mCliente Load (1.1ms)[0m  [1mSELECT "clientes".* FROM "clientes"[0m
+  Rendered clientes/criar_pdf.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1895ms (Views: 22.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-18 15:18:30 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-18 15:18:30 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 15:18:30 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 15:18:30 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-18 15:18:30 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-07-18 15:18:30 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-18 15:18:30 -0300
+>>>>>>> cf14c67a924942fb6205301725af196f1aa28967
