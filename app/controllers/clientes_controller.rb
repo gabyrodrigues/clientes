@@ -23,9 +23,11 @@ class ClientesController < ApplicationController
 		end
   end	
   def criar_pdf
+
     @pessoa = Cliente.all
     @pessoa.each do |pessoa|
-      caminho = "/home/usuario/Documentos/pdf/#{pessoa.nome}.pdf" #Caminho onde irá ficar o arquivo
+      caminho = "/home/desenvolvimento/Área de Trabalho/Testes/#{pessoa.nome}.pdf" #Caminho onde irá ficar o arquivo
+     
       #caminho_img = "/home/desenvolvimento/Área de Trabalho/background.png"
       Prawn::Document.generate(caminho) do |pdf|
         pdf.bounding_box([5, 700], :width => 300, :height => 200) do   
