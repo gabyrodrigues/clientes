@@ -24,19 +24,19 @@ class ClientesController < ApplicationController
   end	
   def criar_pdf
     @pessoa = Cliente.all
-    @pessoa.each do |pessoa|
-      caminho = "/home/usuario/Documentos/pdf/#{pessoa.nome}.pdf" #Caminho onde irá ficar o arquivo
+      caminho = "/home/usuario/Documentos/pdf/boleto.pdf" #Caminho onde irá ficar o arquivo
       #caminho_img = "/home/desenvolvimento/Área de Trabalho/background.png"
       Prawn::Document.generate(caminho) do |pdf|
-        pdf.bounding_box([5, 700], :width => 300, :height => 200) do   
-         	#pdf.text "Nome: #{pessoa.nome}"
-          #pdf.text "CEP: #{pessoa.cep}"
-          #pdf.text "CPF#{pessoa.cpf}"
-          #pdf.table([["#{pessoa.nome}", "uno pasito pra frente maria"], ["Un, dos, tres","uno pasito pra tras"]])
-        	pdf.table([["Nome:"], ["#{pessoa.nome}"], ["Telefone:"], ["#{pessoa.telefone}"], ["Endereço:", "CEP:"], ["#{pessoa.endereco}", "#{pessoa.cep}"], ["Valor:", "Vencimento:"], ["#{pessoa.valor}", "#{pessoa.vencimento}"]])
-        end       
+    		@pessoa.each do |pessoa|
+	        pdf.bounding_box([5, 700], :width => 300, :height => 200) do   
+	         	#pdf.text "Nome: #{pessoa.nome}"
+	          #pdf.text "CEP: #{pessoa.cep}"
+	          
+	        	pdf.table([["Nome:"], ["#{pessoa.nome}"], ["Telefone:"], ["#{pessoa.telefone}"], ["Endereço:", "CEP:"], ["#{pessoa.endereco}", "#{pessoa.cep}"], ["Valor:", "Vencimento:"], ["#{pessoa.valor}", "#{pessoa.vencimento}"]])
+	        end       
+   			end
+	        	pdf.start_new_page
       end
-   	end
 	end
 end 
 
